@@ -1,6 +1,23 @@
- 
+@font-face{
+    font-family: Barlow;
+    src: url('https://fonts.google.com/specimen/Barlow');
+  }
+@font-face{
+    font-family: Fraunces;
+    src : url('https://fonts.google.com/specimen/Fraunces');
+}
+
 .nav-link:hover{
     background-color: rgb(96, 194, 250);
+}
+
+.footerNav a:hover{
+    background-color: hsl(167, 40%, 24%);
+    color:white;
+}
+.footerNav a {
+    color:hsl(167, 40%, 24%);
+    
 }
 /* #headerSection{
     height: 98vh;
@@ -27,3 +44,4 @@ footer{
     fill:hsl(167, 40%, 24%)
 }
  
+     

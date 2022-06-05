@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <main class=" relative container mx-auto">
+    <main class=" relative container mx-auto" id="#main">
         <!-- background-image -->
 
 
@@ -48,7 +48,7 @@
             </header>
             <div
                 class="text-center absolute m-auto space-y-12  w-fit top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
-                <h1 class="relative text-white font-serif  text-5xl lg:text-6xl leading-normal">WE ARE CREATIVES</h1>
+                <h1 class="relative text-white text-5xl lg:text-6xl leading-normal">WE ARE CREATIVES</h1>
                 <img src="./images/icon-arrow-down.svg" class="relative m-auto w-8 lg:w-10">
             </div>
 
@@ -103,9 +103,9 @@
             <div class="relative w-full md:w-1/2">
                 <img src="./images/desktop/image-graphic-design.jpg" class="hidden md:relative md:block">
                 <img src="./images/mobile/image-graphic-design.jpg" class="relative block md:hidden">
-                <div class="absolute bottom-0 h-1/3 justify-start text-center flex-col px-24 text-white space-y-9"
+                <div class="absolute bottom-7 md:m-3 md:bottom-0 h-1/3 justify-start text-center flex-col px-24 text-white space-y-9"
                     id="graphicText">
-                    <h2 class="text-4xl">Graphic design</h2>
+                    <h2 class="text-4xl">Graphic Design</h2>
                     <p>Great design makes you memorable. We deliver artwork that underscores your brand message and
                         captures potential clients’ attention.</p>
                 </div>
@@ -123,35 +123,35 @@
         </section>
         <section>
             <div class="py-20 space-y-9">
-                <h2 class="text-4xl relative flex flex-col  items-center">CLIENT TESTIMONIALS</h2>
-                <div class="relative flex px-32 justify-center space-x-8">
-                    <div class="  relative flex flex-col w-1/3 h-80 items-center justify-around">
+                <h2 class="text-4xl relative flex  flex-col  items-center">CLIENT TESTIMONIALS</h2>
+                <div class="relative flex px-4 md:px-32 md:justify-center items-center md:space-x-8 space-y-6 md:space-y-0 flex-col md:flex-row">
+                    <div class="relative flex flex-col w-11/12 md:w-1/3 h-80 items-center justify-around">
                         <img src="./images/image-emily.jpg" class="rounded-full h-16 w-16">
-                        <p class="px-6 text-center">We put our trust in Sunnyside and they delivered, making sure our needs were met and
+                        <p class="px-6 text-center  ">We put our trust in Sunnyside and they delivered, making sure our needs were met and
                             deadlines were always hit.</p>
                         <div class="flex flex-col text-center">
                             <p class="font-semibold text-xl clientName">
                                 Emily R.
                             </p>
-                            <p>
+                            <p class="text-base text-slate-500">
                                 Marketing Director
                             </p>
                         </div>
                     </div>
-                    <div class=" relative flex flex-col w-1/3 h-80 items-center justify-around">
+                    <div class=" relative flex flex-col w-11/12 md:w-1/3 h-80 items-center justify-around">
                         <img src="./images/image-jennie.jpg" class="rounded-full h-16 w-16">
-                        <p class="px-6 text-center">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+                        <p class="px-6 text-center ">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
                             satisfying and enjoyable experience.</p>
                         <div class="flex flex-col text-center">
                             <p class="font-semibold text-xl clientName">
                                 Thomas S.
                             </p>
-                            <p>
+                            <p class="text-base text-slate-500">
                                 Chief Operating Officer
                             </p>
                         </div>
                     </div>
-                    <div class="  relative flex flex-col w-1/3 h-80 items-center justify-around">
+                    <div class="  relative flex flex-col w-11/12 md:w-1/3 h-80 items-center justify-around">
                         <img src="./images/image-thomas.jpg" class="rounded-full h-16 w-16">
                         <p class="px-6 text-center">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
                             Highly
@@ -160,7 +160,7 @@
                             <p class="font-semibold text-xl clientName">
                                 Jennie F.
                             </p>
-                            <p>
+                            <p class="text-base text-slate-500">
                                 Business Owner
                             </p>
                         </div>
@@ -168,26 +168,36 @@
                 </div>
             </div>
         </section>
-        <section class="realtive flex w-full">
+        <section class="realtive w-full hidden md:flex">
             <img src="./images/desktop/image-gallery-milkbottles.jpg" class="realtive w-1/4">
             <img src="./images/desktop/image-gallery-orange.jpg" class="realtive w-1/4">
             <img src="./images/desktop/image-gallery-cone.jpg" class="realtive w-1/4">
             <img src="./images/desktop/image-gallery-sugarcubes.jpg" class="realtive w-1/4">
         </section>
-        <footer class="relative flex flex-col py-24  border-2 space-y-20">
-            <div class="relative border-2 flex flex-col items-center py-5 space-y-8">
-                <img src="./images/logo.svg" class="footerLogo w-24 md:w-32 lg:w-36">
-                <nav class="relative flex space-x-11">
-                    <a href="#">About</a>
-                    <a href="#">Service</a>
-                    <a href="#">Projects</a>
+        <section class="relative w-full flex flex-col md:hidden">
+            <div class="relative flex w-full ">
+                <img src="./images/mobile/image-gallery-milkbottles.jpg" class="realtive w-1/2">
+                <img src="./images/mobile/image-gallery-orange.jpg" class="realtive w-1/2">
+            </div>
+            <div  class="relative flex w-full ">
+                <img src="./images/mobile/image-gallery-cone.jpg" class="realtive w-1/2">
+                <img src="./images/mobile/image-gallery-sugar-cubes.jpg" class="realtive w-1/2">
+            </div>
+        </section>
+        <footer class="relative flex flex-col py-20  border-2 space-y-20">
+            <div class="relative  flex flex-col items-center py-5 space-y-8">
+                <img src="./images/logo.svg" class="footerLogo w-56 md:w-72 lg:w-80">
+                <nav class="relative flex space-x-11 text-white text-xl footerNav">
+                    <a href="#" class="py-2 px-5 rounded-3xl">About</a>
+                    <a href="#"  class="py-2 px-5 rounded-3xl">Service</a>
+                    <a href="#"  class="py-2 px-5 rounded-3xl">Projects</a>
                 </nav>
             </div>
-            <div class="flex space-x-8 justify-center border-2 " id="socialLink">
-                    <a href="#" class="items-center"><img src="./images/icon-facebook.svg"></a>
-                    <a href="#" class="items-center"><img src="./images/icon-instagram.svg"></a>
-                    <a href="#" class="items-center"><img src="./images/icon-twitter.svg"></a>
-                    <a href="#" class="items-center"><img src="./images/icon-pinterest.svg"></a>
+            <div class="flex space-x-9 justify-center  " id="socialLink">
+                    <a href="#" class="items-center"><img src="./images/icon-facebook.svg" class="hover:w-6"></a>
+                    <a href="#" class="items-center"><img src="./images/icon-instagram.svg" class="hover:w-6"></a>
+                    <a href="#" class="items-center"><img src="./images/icon-twitter.svg" class="hover:w-6"></a>
+                    <a href="#" class="items-center"><img src="./images/icon-pinterest.svg" class="hover:w-6"></a>
             </div>
         </footer>
     </main>
