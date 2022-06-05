@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./tailwind-support/index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+
+<body>
+    <main class=" relative container mx-auto">
+        <!-- background-image -->
+
+
+        <section class="container relative solid border-2 mx-auto my-auto" id="headerSection">
+            <!--  header -->
+            <img src="./images/desktop/image-header.jpg" class="hidden  md:mx-auto md:block  " id="section1Img">
+            <img src="./images/mobile/image-header.jpg" class="block mx-0 md:hidden">
+
+            <header class="absolute container flex justify-between h-14 items-center mx-auto top-0" id="header">
+                <img src="./images/logo.svg" alt="sunnyside" class=" w-24  ml-5 md:ml-10 md:w-32 lg:w-auto">
+                <!-- navbar -->
+                <button class=" relative mx-3 md:hidden"><img src="./images/icon-hamburger.svg"></button>
+                <nav class="hidden md:justify-end md:flex md:space-x-4 lg:space-x-9 md:text-white md:relative mr-10">
+
+                    <a href="#" class="nav-link py-2 px-5 rounded-3xl">
+                        About
+                    </a>
+                    <a href="#" class="nav-link py-2 px-5  rounded-3xl">
+                        Services
+
+                    </a>
+                    <a href="#" class="nav-link py-2 px-5  rounded-3xl">
+                        Projects
+
+                    </a>
+                    <a href="#" class="nav-link py-2 px-5  bg-white text-black rounded-3xl hover:text-white">
+                        Contact
+                    </a>
+
+
+
+                </nav>
+            </header>
+            <div
+                class="text-center absolute m-auto space-y-12  w-fit top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+                <h1 class="relative text-white font-serif  text-5xl lg:text-6xl leading-normal">WE ARE CREATIVES</h1>
+                <img src="./images/icon-arrow-down.svg" class="relative m-auto w-8 lg:w-10">
+            </div>
+
+        </section>
+        <section id="section-2" class="relative flex flex-col-reverse md:flex-row">
+            <div
+                class="flex relative items-start justify-center flex-col w-full md:w-1/2  py-10  space-y-7 px-6 md:px-28">
+
+                <h2 class="text-5xl">
+                    Transform your brand
+                </h2>
+
+                <p class="relative w-full block h-fit">
+                    We are a full-service creative agency specializing in helping brands grow fast.
+                    Engage your clients through compelling visuals that do most of the marketing for you.
+                </p>
+                <div>
+                    <a href="#" class="relative hover:pb-0.5 learn1">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="relative w-full md:w-1/2">
+                <img src="./images/desktop/image-transform.jpg" class="hidden md:relative md:block">
+                <img src="./images/mobile/image-transform.jpg" class="relative block md:hidden">
+            </div>
+        </section>
+        <section id="section-3" class="relative flex flex-col-reverse md:flex-row-reverse">
+            <div
+                class="flex relative items-start justify-center flex-col w-full md:w-1/2  py-10  space-y-7  px-6 md:px-28">
+
+                <h2 class="text-5xl  ">
+                    Stand out to the right audience
+                </h2>
+
+                <p class=" relative w-full block h-fit">
+                    Using a collaborative formula of designers, researchers, photographers, videographers, and
+                    copywriters, we’ll build and extend your brand in digital places.
+                </p>
+                <div>
+                    <a href="#" class="relative hover:pb-0.5 learn2">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="relative w-full md:w-1/2">
+                <img src="./images/desktop/image-stand-out.jpg" class="hidden md:relative md:block">
+                <img src="./images/mobile/image-stand-out.jpg" class="relative block md:hidden">
+            </div>
+        </section>
+        <section id="section-4" class="relative flex flex-col md:flex-row">
+            <div class="relative w-full md:w-1/2">
+                <img src="./images/desktop/image-graphic-design.jpg" class="hidden md:relative md:block">
+                <img src="./images/mobile/image-graphic-design.jpg" class="relative block md:hidden">
+                <div class="absolute bottom-0 h-1/3 justify-start text-center flex-col px-24 text-white space-y-9"
+                    id="graphicText">
+                    <h2 class="text-4xl">Graphic design</h2>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and
+                        captures potential clients’ attention.</p>
+                </div>
+            </div>
+            <div class="relative w-full md:w-1/2">
+                <img src="./images/desktop/image-photography.jpg" class="hidden md:relative md:block">
+                <img src="./images/mobile/image-photography.jpg" class="relative block md:hidden">
+                <div class="absolute bottom-0 h-1/3 justify-start text-center flex-col px-24 text-white space-y-9"
+                    id="photographyText">
+                    <h2 class="text-4xl">Photography</h2>
+                    <p>Increase your credibility by getting the most stunning, high-quality photos that improve your
+                        business image.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="py-20 space-y-9">
+                <h2 class="text-4xl relative flex flex-col  items-center">CLIENT TESTIMONIALS</h2>
+                <div class="relative flex px-32 justify-center space-x-8">
+                    <div class="  relative flex flex-col w-1/3 h-80 items-center justify-around">
+                        <img src="./images/image-emily.jpg" class="rounded-full h-16 w-16">
+                        <p class="px-6 text-center">We put our trust in Sunnyside and they delivered, making sure our needs were met and
+                            deadlines were always hit.</p>
+                        <div class="flex flex-col text-center">
+                            <p class="font-semibold text-xl clientName">
+                                Emily R.
+                            </p>
+                            <p>
+                                Marketing Director
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" relative flex flex-col w-1/3 h-80 items-center justify-around">
+                        <img src="./images/image-jennie.jpg" class="rounded-full h-16 w-16">
+                        <p class="px-6 text-center">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+                            satisfying and enjoyable experience.</p>
+                        <div class="flex flex-col text-center">
+                            <p class="font-semibold text-xl clientName">
+                                Thomas S.
+                            </p>
+                            <p>
+                                Chief Operating Officer
+                            </p>
+                        </div>
+                    </div>
+                    <div class="  relative flex flex-col w-1/3 h-80 items-center justify-around">
+                        <img src="./images/image-thomas.jpg" class="rounded-full h-16 w-16">
+                        <p class="px-6 text-center">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+                            Highly
+                            recommended!</p>
+                        <div class="flex flex-col text-center">
+                            <p class="font-semibold text-xl clientName">
+                                Jennie F.
+                            </p>
+                            <p>
+                                Business Owner
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="realtive flex w-full">
+            <img src="./images/desktop/image-gallery-milkbottles.jpg" class="realtive w-1/4">
+            <img src="./images/desktop/image-gallery-orange.jpg" class="realtive w-1/4">
+            <img src="./images/desktop/image-gallery-cone.jpg" class="realtive w-1/4">
+            <img src="./images/desktop/image-gallery-sugarcubes.jpg" class="realtive w-1/4">
+        </section>
+        <footer class="relative flex flex-col py-24  border-2 space-y-20">
+            <div class="relative border-2 flex flex-col items-center py-5 space-y-8">
+                <img src="./images/logo.svg" class="footerLogo w-24 md:w-32 lg:w-36">
+                <nav class="relative flex space-x-11">
+                    <a href="#">About</a>
+                    <a href="#">Service</a>
+                    <a href="#">Projects</a>
+                </nav>
+            </div>
+            <div class="flex space-x-8 justify-center border-2 " id="socialLink">
+                    <a href="#" class="items-center"><img src="./images/icon-facebook.svg"></a>
+                    <a href="#" class="items-center"><img src="./images/icon-instagram.svg"></a>
+                    <a href="#" class="items-center"><img src="./images/icon-twitter.svg"></a>
+                    <a href="#" class="items-center"><img src="./images/icon-pinterest.svg"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
